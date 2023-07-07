@@ -105,29 +105,43 @@
         crossorigin="anonymous"></script>
     <script>
         //new Date(year, month, day, hours, minutes, seconds, milliseconds)
-        var futuro = new Date(2023, 8, 20);
+        // var futuro = new Date(2023, 8, 20);
+        var diaCasamiento= new Date('Aug 20, 2023 21:00:00').getTime();
+
         //actualiza el contador cada 4 segundos ( = 4000 milisegundos)
         var actualiza = 1000;
         // función que calcula y escribe el tiempo en días, horas, minutos y segundos
         // que faltan para la variable futuro
         function faltan() {
-            var ahora = new Date();
-            var faltan = futuro - ahora;
+            
+            const  ahora= new Date().getTime();
+            let distancia= diaCasamiento-ahora;
+
+        //   var ahora = new Date();
+        //   var faltan = futuro - ahora;
             // si todavís no es futuro
-            if (faltan > 0) {
-                var segundos = Math.round(faltan / 1000);
+            if (distancia > 0) {
+                let dias= Math.floor(distancia/(1000*60*60*24));
+                let horas= Math.floor((distancia%(1000*60*60*24))/(1000*60*60));
+                let minutos= Math.floor((distancia%(1000*60*60))/(1000*60));
+                let segundos= Math.floor((distancia%(1000*60))/(1000)); 
+
+           /*   var segundos = Math.round(faltan / 1000);
                 var minutos = Math.floor(segundos / 60);
                 var segundos_s = segundos % 60;
                 var horas = Math.floor(minutos / 60);
                 var minutos_s = minutos % 60;
                 var dias = Math.floor(horas / 24);
-                var horas_s = horas % 24;
+                var horas_s = horas % 24;*/
+
                 // escribe los resultados
-                (segundos_s < 10) ? segundos_s = "0" + segundos_s : segundos_s = segundos_s;
+            /*    (segundos_s < 10) ? segundos_s = "0" + segundos_s : segundos_s = segundos_s;
                 (minutos_s < 10) ? minutos_s = "0" + minutos_s : minutos_s = minutos_s;
                 (horas_s < 10) ? horas_s = "0" + horas_s : horas_s = horas_s;
                 (dias < 10) ? dias = "0" + dias : dias = dias;
-                var resultado = dias + " días : " + horas_s + " horas : " + minutos_s + " minutos : " + segundos_s + " segundos";
+
+        */
+                var resultado = dias + " días : " + horas + " horas : " + minutos + " minutos : " + segundos + " segundos";
                 document.formulario.reloj.value = resultado;
                 //actualiza el contador
                 setTimeout("faltan()", actualiza);
