@@ -1,0 +1,87 @@
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.navbar-collapse{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    list-style-type: none;
+    size: 20px;
+    color: black;
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+}
+h2{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+}
+main{
+    background-image: url("../multimedia/portada.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cuenta-atras {
+    text-align: center;
+    width: 100%;
+    color: black;
+    padding: 15px;
+    font-size: 30px;
+    font-family: sans-serif;  
+}
+
+form{
+    width: 700px;
+    border: solid 1px white;
+    padding: white;
+}
+
+article{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+h3{
+    text-align: center;
+}
+button{
+    color: black;
+    background-color: white;
+    border: solid 1px black;
+    margin: 10px;
+}
+
+.centradocolumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.centradorow{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+
+
+
+
+
