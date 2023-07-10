@@ -118,6 +118,7 @@ h2{
   */
 
 
+
 main{
     background-image: url("../multimedia/portada.jpg");
     background-size: cover;
@@ -130,6 +131,39 @@ main{
     justify-content: center;
     align-items: center;
 }
+
+h3{
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+.contenedorPadrinos{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 0.2rem;
+    text-align: center;
+    color: #2B2B2B;
+    font-family: "Cormorant Garamond", Sans-serif;
+    font-size: 35px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1em;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.contenedorPadrinos p{
+    padding-bottom: 1rem;
+}
+.tituloPadrinos{
+    color: #7A7A7A;
+    font-family: "Cormorant Garamond", Sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 2em;
+}
+
 .cuenta-atras {
     text-align: center;
     width: 100%;
@@ -149,9 +183,7 @@ article{
     margin-top: 50px;
     margin-bottom: 50px;
 }
-h3{
-    text-align: center;
-}
+
 button{
     color: black;
     background-color: white;
