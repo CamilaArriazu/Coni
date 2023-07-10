@@ -121,6 +121,9 @@ h2{
 
 main{
     background-image: url("../multimedia/portada.jpg");
+   /* filter:sepia(30%) ;*/
+ /*   filter: grayscale(1) blur(1px) contrast(1) sepia(0.5) blur(0.25px);*/
+   /* -webkit-mask: radial-gradient(#000, #000a); */
     background-size: cover;
     background-position: center;
     padding-top: 300px;
@@ -170,6 +173,7 @@ h3{
 .horaClass{
     font-family: "Cormorant Garamond", Sans-serif;
     background-image: url("../multimedia/fondoTiempo2.jpg");
+    
     background-size: cover;
     background-position: center;
     padding-bottom: 400px;
@@ -282,6 +286,21 @@ form{
     padding: white;
 }*/
 
+
+.fotoClass{
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    gap: 0.2rem;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+
+    
+}
+
+.fotoClass img{
+    max-width: 100%;
+}
 
 button{
     color: black;
