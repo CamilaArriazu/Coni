@@ -2,36 +2,129 @@
     font-family: 'Quicksand', sans-serif;
 }
 
+.navbar {
+    position: fixed;
+}
+
 .navbar-collapse{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
 }
 li{
     list-style-type: none;
     size: 20px;
     color: black;
 }
+
+.tituloCentral{
+    position: absolute; 
+    top:375px;
+    height: auto;
+    width: 400px;
+    text-align: center;
+}
+
+
 h1{
-    font-size: 50px;
+    font-family: "Cormorant Garamond", Sans-serif;
+    font-size: 4rem;
     text-align: center;
     color: white;
     font-weight: 400;
+    letter-spacing: 2px;
+    margin: 0;
+    padding-bottom: 8px;
 }
 h2{
-    font-size: 30px;
+
+    font-family: "DM Sans",Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight:500;
+    font-weight:bolder;
     text-align: center;
     color: white;
     font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
 }
+
+
+.material-symbols-outlined {
+    color: #e2e2e2;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+.ornamentoClass{
+    visibility: visible;
+    width: 15rem;
+}
+.textCentral{
+    font-family: "Cormorant Garamond", Sans-serif;
+    padding-top: 8px;
+    font-size: 27px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1em;
+    letter-spacing: 2.9px;
+}
+
+
+/*  -----HEADER----- */
+
+.linkBlanco{
+    color: antiquewhite;
+}
+
+.linkBlanco:hover{
+    color: antiquewhite;
+    font-size: 18px;
+}
+.linkBlanco:visited{
+    color: antiquewhite;
+}
+
+/*****/
+
+
+.bg-light{
+    background-color:#818181 !important;
+    color: antiquewhite;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+
+/*-transicion imagen y zoom*/
+/* .zoom {
+    transition:initial; 
+  
+}
+ 
+.zoom:hover {
+    transform: scale(1.5); 
+}
+  */
+
+
 main{
     background-image: url("../multimedia/portada.jpg");
     background-size: cover;
     background-position: center;
     padding-top: 300px;
-    padding-bottom: 300px;
+    padding-bottom: 400px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
