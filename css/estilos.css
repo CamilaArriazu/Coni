@@ -164,25 +164,124 @@ h3{
     line-height: 2em;
 }
 
-.cuenta-atras {
-    text-align: center;
-    width: 100%;
-    color: black;
-    padding: 15px;
-    font-size: 30px;
-    font-family: sans-serif;  
+
+/* SECCION HORA */
+
+.horaClass{
+    font-family: "Cormorant Garamond", Sans-serif;
+    background-image: url("../multimedia/fondoTiempo2.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 400px;
+    height: 300px;
 }
 
+.horaClass h3{
+    text-align: center;
+    color: #4B4B4B;
+    font-family: "Cormorant Garamond", Sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1em;
+    letter-spacing: 3.5px;
+}
+
+.horaClass p{
+    text-transform: uppercase;
+    color: #818181;
+    font-family: "Rufina";
+    font-size: 27px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1em;
+    letter-spacing: 2.9px;
+}
+
+
+
+.centradocolumn{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    max-width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    letter-spacing: .7px;
+
+    margin-top: 2rem;
+
+    color: #818181;
+   /* font-family: "Rufina";
+    font-size: 27px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1em;
+    letter-spacing: 2.9px;*/
+}
+
+.centradoDireccion{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    max-width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    letter-spacing: .7px;
+
+    margin-top: 2rem;
+
+    color: #818181;
+   /* font-family: "Rufina";
+    font-size: 27px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1em;
+    letter-spacing: 2.9px;*/
+}
+
+.cuenta-atras {
+    width: 100%;
+    color:#4B4B4B;
+    background-color: #fcf1f100;
+    padding: 14px;
+    font-family: sans-serif;  
+    font-size: 30px;
+    text-align: center;
+    border: none;
+   /* padding: 30px 10px 25px 10px;*/
+
+}
+.formBorde{
+    width: 100px;
+    border: double .2rem #967c5e;
+
+    margin: 10px;
+    text-align: center;
+}
+.formBorde P{
+    font-size: 15px;
+    letter-spacing: .7px;
+    padding-top: 6px;
+}
+
+/*
 form{
     width: 700px;
     border: solid 1px white;
     padding: white;
-}
+}*/
 
-article{
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
 
 button{
     color: black;
@@ -191,12 +290,7 @@ button{
     margin: 10px;
 }
 
-.centradocolumn{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .centradorow{
     display: flex;

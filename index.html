@@ -76,19 +76,9 @@
           <div class="tituloCentral" >
             <h2>Nos casamos</h2>
             <h1>Coni  &  Edu</h1>
-            <span class="material-symbols-outlined">
-                keyboard_arrow_left
-                </span>
-                <span class="material-symbols-outlined">
-                    keyboard_arrow_left
-                    </span>
+  
             <span class="material-symbols-outlined">         blur_on               </span>
-            <span class="material-symbols-outlined">
-                keyboard_arrow_right
-                </span>
-            <span class="material-symbols-outlined">
-                    keyboard_arrow_right
-                    </span>
+
             <!-- <img src="../multimedia/orna2.png" class="ornamentoClass"> -->
             <p class="center white textCentral">Te invitamos a compartir la alegría de unir nuestras vidas</p>
     
@@ -102,20 +92,42 @@
    
 
     <section>
-        <article>
-            <h3><strong>TE ESPERAMOS EN NUESTRA BODA</strong></h3>
-            <hr>
-            <div class="centradocolumn">
-                <p class="center">20 de Agosto del 2023</p>
-                <form name="formulario">
-                    <input class="cuenta-atras" type="text" name="reloj" />
+        <article id="hora" class="horaClass">
+            <h3> TE ESPERAMOS EN NUESTRA BODA</h3>
+            <p class="center">20 de Agosto del 2023</p>
+            <div class="centradocolumn">   
+                <form name="formularioA">
+                    <div class="formBorde">
+                        <p>Días:</p>
+                        <input class="cuenta-atras" type="text" name="reloj" />
+                    </div>
+                </form>
+                <form name="formularioB">
+                    <div class="formBorde">
+                        <p>Horas:</p>
+                        <input class="cuenta-atras" type="text" name="reloj" />
+                    </div>
+                </form>
+                <form name="formularioC">
+                    <div class="formBorde">
+                        <p>Minutos:</p>
+                        <input class="cuenta-atras" type="text" name="reloj" />
+                    </div>
+                </form>
+                <form name="formularioD">
+                    <div class="formBorde">
+                        <p>Segundos:</p>
+                        <input class="cuenta-atras" type="text" name="reloj" />
+                    </div>
                 </form>
             </div>
         </article>
+
+
         <article id="direccion">
             <h3><strong>Dirección</strong></h3>
             <div class="centradorow">
-                <div class="centradocolumn">
+                <div class="centradoDireccion">
                     <h4><strong>Parroquia San Juan Bosco</strong></h4>
                     <p>Av. Mitre 312, San Miguel de Tucumán.</p>
                     <img src="multimedia/iglesia.jpg" alt="" />
@@ -129,7 +141,7 @@
                             Maps</a>
                     </button>
                 </div>
-                <div class="centradocolumn">
+                <div class="centradoDireccion">
                     <h4><strong>Keké Salón de Fiestas</strong></h4>
                     <p>Diagonal Lechesse km 3.5 Camino 14, Tafí Viejo, Tucumán.</p>
                     <img src="multimedia/salon.jpg" alt="" />
@@ -147,7 +159,7 @@
         </article>
         <article id="itinerario">
             <h3><strong>Itinerario</strong></h3>
-            <div class="centradocolumn">
+            <div class="centradoDireccion">
                 <img src="multimedia/21 hs.png" alt="" />
             </div>
         </article>
@@ -237,16 +249,16 @@
                 </div>
               </div>
          </section>
-         
+
         <article id="whatsapp">
             <h3><strong>Confirmación por WhatsApp</strong></h3> 
-            <div class="centradocolumn">
+            <div class="centradoDireccion">
                 <button><a href="https://w.app/invitacionconiyedu">Confirmar mi presencia</a></button>
             </div>
         </article>
         <article id="cbu">
             <h3><strong>Regalo</strong></h3> 
-            <div class="centradocolumn">
+            <div class="centradoDireccion">
                 <p class="center">Tu presencia es el regalo más preciado para nosotros pero si deseas darnos un obsequio puedes ayudarnos con nuestra luna de miel.</p>
             </div>
         </article>
@@ -258,6 +270,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
+    
+    
     <script>
         //new Date(year, month, day, hours, minutes, seconds, milliseconds)
         // var futuro = new Date(2023, 8, 20);
@@ -271,8 +285,6 @@
             const ahora = new Date().getTime();
             let distancia = diaCasamiento - ahora;
 
-            //   var ahora = new Date();
-            //   var faltan = futuro - ahora;
             // si todavís no es futuro
             if (distancia > 0) {
                 let dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
@@ -283,21 +295,6 @@
                     (distancia % (1000 * 60 * 60)) / (1000 * 60)
                 );
                 let segundos = Math.floor((distancia % (1000 * 60)) / 1000);
-
-                /*   var segundos = Math.round(faltan / 1000);
-                var minutos = Math.floor(segundos / 60);
-                var segundos_s = segundos % 60;
-                var horas = Math.floor(minutos / 60);
-                var minutos_s = minutos % 60;
-                var dias = Math.floor(horas / 24);
-                var horas_s = horas % 24;*/
-
-                // escribe los resultados
-                /*    (segundos_s < 10) ? segundos_s = "0" + segundos_s : segundos_s = segundos_s;
-                        (minutos_s < 10) ? minutos_s = "0" + minutos_s : minutos_s = minutos_s;
-                        (horas_s < 10) ? horas_s = "0" + horas_s : horas_s = horas_s;
-                        (dias < 10) ? dias = "0" + dias : dias = dias;
-                  */
                 var resultado =
                     dias +
                     " días : " +
@@ -307,14 +304,21 @@
                     " minutos : " +
                     segundos +
                     " segundos";
-                document.formulario.reloj.value = resultado;
+                document.formularioA.reloj.value = dias;
+                document.formularioB.reloj.value = horas;
+                document.formularioC.reloj.value = minutos;
+                document.formularioD.reloj.value = segundos;
                 //actualiza el contador
                 setTimeout("faltan()", actualiza);
             }
             // estamos en el futuro
             else {
-                document.formulario.reloj.value =
-                    "00 días : 00 horas : 00 minutos : 00 segundos";
+                // document.formulario.reloj.value =
+                //     "00 días : 00 horas : 00 minutos : 00 segundos";
+                document.formularioA.reloj.value = "00";
+                document.formularioB.reloj.value = "00";
+                document.formularioC.reloj.value =  "00";
+                document.formularioD.reloj.value =  "00";
             }
         }
         faltan();
